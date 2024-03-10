@@ -20,6 +20,11 @@ a {
 }
 
 /* common */
+:root {
+    --color-bgteeth: #eff6fd;
+    --color-teeth: #10375c;
+}
+
 .btn {
     display: inline-block;
     min-width: 205px;
@@ -266,23 +271,16 @@ a {
     align-items: center;
     min-width: 60px;
     height: 60px;
-    background-color: #eff6fd;
-    color: #10375c;
+    background-color: var(--color-bgteeth);
+    color: var(--color-teeth);
     border-radius: 50%;
     margin-left: 22px;
     margin-top: 21px;
-
-}
-
-.service__inner:hover {
-    color: #fff;
-    background-color: #2e80ce;
 }
 
 .service__item {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 470px;
     height: 120px;
 }
@@ -290,6 +288,8 @@ a {
 .service__item:hover {
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    --color-bgteeth: #2e80ce;
+    --color-teeth: #fff;
 }
 
 .service__item--about {
@@ -301,7 +301,6 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     padding-top: 21px;
-
 }
 
 .service__item--about--desc {
